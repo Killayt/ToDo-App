@@ -1,5 +1,7 @@
 package service
 
+import "github.com/Killayt/ToDo-App/pkg/repos"
+
 type Auth struct {
 }
 
@@ -15,6 +17,6 @@ type Service struct {
 	TodoItem
 }
 
-func NewService() *Service {
+func NewService(repos *repos.Repo) *Service {
 	return &Service{}
 }
